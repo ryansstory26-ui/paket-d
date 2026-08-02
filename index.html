@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#e6392e">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-icon" href="icon-192.png">
+
+    <meta name="description" content="Anca Kebab Kediri - Kebab Ayam, Daging & Lamb Premium. Delivery cepat Pare, Kediri. Pesan sekarang!">
+    <meta name="keywords" content="kebab Pare, kebab Kediri, chicken kebab, anca kebab, makanan pare, bakso pare, bakso Kediri">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anca Kebab • Kebab & Bakso Premium</title>
@@ -90,7 +100,7 @@
              position: fixed;
              bottom: 25px;
              right: 25px;
-             background: #e6392e;
+             background: #dd3124;
              color: white;
              width: 40px;
              height: 40px;
@@ -99,24 +109,27 @@
              align-items: center;
              justify-content: center;
              font-size: 1.9rem;
-             box-shadow: 0 12px 30px rgba(228, 156, 151, 0.5);
+             box-shadow: 0 2px 10px rgba(246, 243, 242, 0.921);
              z-index: 999;
              animation: pulse 2s infinite; }
 
         .cart-count {
              position: absolute;
-             top: -8px;
-             right: -8px;
+             top: -4px;
+             right: -4px;
              background: #f3510b;
              color: black;
              font-weight: bold;
              width: 28px;
              height: 28px;
-             border-radius: 50%;
+             border-radius: 100%;
              display: flex;
              align-items: center;
              justify-content: center;
-         }
+             
+        }
+
+
 
         .qr-code {
              border: 8px solid #e6392e;
@@ -126,7 +139,7 @@
 
                .navbar { background: rgba(32, 1, 1, 0.796) !important; backdrop-filter: blur(12px);
                   box-shadow: 0 10px 10px #f74636ee;
-                  border-bottom: 1px solid #f2572c;
+                  border-bottom: 1px solid #f8efed;
          }
 
          .navbar-toggler:hover {
@@ -225,7 +238,14 @@
             -webkit-text-fill-color: transparent;
         }
 
-         @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); } 70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); } 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); } }
+         @keyframes pulse {
+          
+          3% { box-shadow: 0 0 0 1px rgba(248, 245, 245, 0.999); opacity: (0..8); }
+          20% { box-shadow: 0 0 0 8px rgba(48, 3, 248, 0.466); opacity: (2); }
+          40% { box-shadow: 0 0 0 20px rgba(245, 6, 6, 0.563); opacity: (1.2); }
+         }
+          
+
         </style>
 </head>
             
@@ -236,7 +256,7 @@
             <a class="navbar-brand fw-bold text-danger rounded-5 fs-3" href="#"><i class="fas fa-fire"></i> Anca Kebab</a>
 
               <!--time-->
-                  <div class="time bg-danger rounded-4 me-3 p-2 d-flex flex-column align-items-center">
+                  <div class="time bg-secondary rounded-4 me-3 p-2 d-flex flex-column align-items-center">
                        <div id="time" class="text-left text-white fw-bold">00:00:00</div>
                        <div id="date" class="text-left text-light fw-bold">00/00/0000</div>
                  </div>
@@ -376,7 +396,8 @@
                         <a href="https://www.instagram.com/ryans_story26/" class="btn text-bg-danger me-3"><i class="fab fa-instagram"></i></a>
                         <a href="https://wa.me/6281357797705" class="btn text-bg-success me-3"><i class="fab fa-whatsapp"></i></a>
                         <a href="https://www.tiktok.com/@ryananwar24" class="btn text-bg-danger me-3"><i class="fab fa-tiktok"></i></a>
-                        <a href="https://www.facebook.com/ryansstory" class="btn text-bg-primary me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.facebook.com/r ryan anwar" class="btn text-bg-primary me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/@ryan-aw" class="btn text-bg-danger me-3"><i class="fab fa-youtube"></i></a>
                     </div>
                     <button class="btn btn-success mt-3" onclick="showWhatsApp()">
                         <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
@@ -513,12 +534,13 @@
                 "Anca Kebab - Rasanya Juara!",
                 "Lihat proses pembuatan dan suasana di Anca Kebab.",
                 [
-                    "https://www.youtube.com/embed//raxAVu1pJVA?rel=0&modestbranding=1&autoplay=1&playsinline=1",
+                    "https://www.youtube.com/embed/raxAVu1pJVA?rel=0&modestbranding=1&autoplay=1&playsinline=1",
                     "https://www.youtube.com/embed/XUe-_3y5DcU?rel=0&modestbranding=1&playsinline=1",
-                    "https://www.youtube.com/embed/gQQORII_Veo??rel=0&modestbranding=1&playsinline=1",
+                    "https://www.youtube.com/embed/BlQ8v9ugPqg?rel=0&modestbranding=1&playsinline=1",
                     "https://www.youtube.com/embed/pSpy6_XqXdg?rel=0&modestbranding=1&playsinline=1",
-                    "https://www.youtube.com/embed/sS3ZxBQYzGQ?rel=0&modestbranding=1&playsinline=1",
-                    "https://www.youtube.com/embed/YQTL7tC4Jso?rel=o&modestbranding=1&playsinline=1"
+                    "https://www.youtube.com/embed/gQQORII_Veo?rel=0&modestbranding=1&playsinline=1",
+                    "https://www.youtube.com/embed/YQTL7tC4Jso?rel=0&modestbranding=1&playsinline=1",
+                    "https://www.youtube.com/embed/sS3ZxBQYzGQ?rel=0&modestbranding=1&playsinline=1"
                 ]
             );
         }
@@ -889,7 +911,7 @@
                 <h5>Total Pembayaran</h5>
                 <h3 class="text-danger">Rp ${total.toLocaleString('id-ID')}</h3>
                 <div class="qr-code my-4">
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=350x350&data=ANCAKEBAB-ORDER-${Date.now()}" class="img-fluid">
+                    <img src="https://scontent.fkul4-5.fna.fbcdn.net/v/t39.30808-6/721626034_27553838280878072_2729918905246909806_n.jpg?stp=dst-jpg_tt6&cstp=mx1240x1748&ctp=s1240x1748&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=g34_6ykHs2cQ7kNvwFkY5Ed&_nc_oc=Adrg4zGqj7ET_jalVfk8J2mWwY5a3BtxVFjZUpVw3wcumt4Ylm-gKegLsQacF_1vzg92dhPSm1oP96Ze1L1fiRVl&_nc_zt=23&_nc_ht=scontent.fkul4-5.fna&_nc_gid=a4RZJbJ8NRLS1mnqeGYxCg&_nc_ss=7b2a8&oh=00_AQGmiOq7yKu588y5RiZSwlX3eDP1WDj3NcMIlrR_WkXUoA&oe=6A746B09" class="img-fluid">
                 </div>
             `;
             new bootstrap.Modal(document.getElementById('qrisModal')).show();
@@ -913,6 +935,17 @@
             renderTestimonials();
             renderComments();
         };
+          </script>
+        <script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("./sw.js")
+        .then(reg => console.log("Service Worker berhasil didaftarkan"))
+        .catch(err => console.log("Service Worker gagal:", err));
+    });
+  }
+</script>
+
     </script>
 </body>
 </html>
